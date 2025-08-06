@@ -1,0 +1,70 @@
+# 🛡️ Phishing Email Analysis - Task 2
+
+## 🔍 Objective
+To identify phishing indicators in a suspicious email sample and understand the tactics used.
+
+---
+
+## 📧 Sample Email Content
+
+**From**: PayPal Security `<security@paypa1.com>`  
+**Subject**: Urgent: Account Suspension Notice  
+
+> _We have detected unusual activity in your PayPal account. To restore access, please verify your information. Failure to respond within 24 hours will result in permanent suspension._
+
+**Link**: [https://paypal-verify-now.com/login](https://paypal-verify-now.com/login)
+
+---
+
+## 🚩 Phishing Indicators Identified
+
+| Indicator | Description |
+|----------|-------------|
+| 1️⃣ Sender Spoofing | `security@paypa1.com` mimics PayPal (real domain is `paypal.com`) |
+| 2️⃣ Urgent Language | “Failure to respond within 24 hours” creates panic |
+| 3️⃣ Suspicious Link | Hover shows link is not `paypal.com` but `paypal-verify-now.com` |
+| 4️⃣ Generic Greeting | “Dear Customer” instead of your name |
+| 5️⃣ Poor Grammar | Example: “Failure to respond will result in permanent suspension” sounds overly aggressive |
+| 6️⃣ No Personal Info | Legit services usually address by name |
+| 7️⃣ Fake URL Display | Link text and destination don’t match |
+| 8️⃣ Threatening Consequences | Creates fear to force quick action |
+
+---
+
+## 🧪 Tools Used
+
+- [MXToolbox Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)
+- [VirusTotal Link Scanner](https://www.virustotal.com/)
+- Hover-over technique for link verification
+
+---
+
+## 🗂️ Repository Files
+
+- `phishing_email.txt` — Fake email content  
+- `README.md` — This report  
+- `header_analysis.txt` — (Optional: Add a fake email header and analyze with MXToolbox)
+
+---
+
+## 🔚 Conclusion
+
+This task helped identify multiple phishing indicators including spoofed sender, urgency, suspicious links, and social engineering tactics. Recognizing these signs is essential to email threat detection and cyber defense.
+
+---
+
+## 📎 Bonus Interview Prep
+
+1. **What is phishing?**  
+   A cyberattack using fake emails to steal sensitive information.
+
+2. **How to identify phishing emails?**  
+   Look for spoofed addresses, urgent messages, mismatched links, poor grammar, and unknown senders.
+
+3. **What is email spoofing?**  
+   Forging the sender’s email address to appear legitimate.
+
+4. **What tools help?**  
+   - MXToolbox for header analysis  
+   - VirusTotal for link/file scans
+
